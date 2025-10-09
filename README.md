@@ -1,4 +1,4 @@
-Решение всех 40 задач по алгоритмам 8.0 от Yandex (осень 2025) на языке python
+Решение всех задач (10/40) по алгоритмам 8.0 от Yandex (осень 2025) на языке python
 
 Задачи и лекции: https://yandex.ru/yaintern/training/algorithm-training
 
