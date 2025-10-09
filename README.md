@@ -1,7 +1,8 @@
 Решение всех 40 задач по алгоритмам 8.0 от Yandex (осень 2025) на языке python
 
 Задачи и лекции: https://yandex.ru/yaintern/training/algorithm-training
-![Uploading image.png…]()
+
+![orig](https://avatars.mds.yandex.net/get-lpc/17495851/bb05952f-6f9a-45a9-ba21-76e04b6f3bbe/orig)
 
 
 Я старался оставлять комментарии к своим решениям, но если все же что-то не понятно, то смотрите лекции и разборы задач (в крайнем случае можете обратиться за помощью сюда https://t.me/Young_and_Yandex)
