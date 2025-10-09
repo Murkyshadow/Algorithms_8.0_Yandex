@@ -1,13 +1,15 @@
-# 0:30
+# если прописать все засимости то все числа сводятся к 2 циклам: из чисел 1, 3, 7, 9 мы приходим к бесонечному циклу (2-> 4-> 8-> 16 -> 22....) - последняя цифра будет повторяться, а число 5 приводит к бесконечному циклу из (0->0->0.....)
+# при этом при прохождении 1го цикла прибавляется 20, а при прохождении 2го цикла прибавяется 0
+# остается понять сколько таких циклов надо пройти и сколько по итогу прибавится
 cycle = {2:[20, 4], 0:[0, 1]}   # с какой цифры начинается:[сколько прибавляется за цикл, длина цикла]
 LEN_CYCLE, ADD_PER_CYCLE = 1, 0
 n, lost_time = map(int, input().split())
-now_num = n
-while lost_time and not now_num % 10 in cycle:
+now_num = n    # текущее число
+while lost_time and not now_num % 10 in cycle: # идем пока не кончится время или пока не зайдем в бесконечный цикл 
     now_num += now_num%10
     lost_time -= 1
 
-if lost_time:
+if lost_time:    # если время еще есть то находим кол-во циклов и сумму которая прибавиться
     num_cycles = lost_time // cycle[now_num%10][LEN_CYCLE]
     now_num += num_cycles * cycle[now_num%10][ADD_PER_CYCLE]
     lost_time = lost_time % cycle[now_num%10][LEN_CYCLE]
@@ -15,3 +17,4 @@ if lost_time:
         now_num += now_num % 10
 
 print(now_num)
+
