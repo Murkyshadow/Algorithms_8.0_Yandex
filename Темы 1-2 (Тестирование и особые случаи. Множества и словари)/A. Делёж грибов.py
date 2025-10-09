@@ -1,4 +1,3 @@
-# 20:20 - 20:34
 n = int(input())
 m = list(map(int, input().split()))
 Vasya_mushrooms = m[0::2]
@@ -11,3 +10,4 @@ if max_Masha > min_Vasya:
     ans -= min_Vasya*2
     ans += max_Masha*2
 print(ans)
+
