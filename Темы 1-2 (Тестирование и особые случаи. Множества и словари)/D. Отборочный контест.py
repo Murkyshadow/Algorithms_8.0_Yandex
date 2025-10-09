@@ -1,5 +1,4 @@
-# 0:50
-
+# подсчитываем кол-во каждой темы, если нужно задач больше, чем есть тем, то просто добираем это кол-во какими-либо темами
 n, k = map(int, input().split())
 nums = list(map(int, input().split()))
 
@@ -18,5 +17,6 @@ for theme, num in count_themes.items():
     if num_repeat_themes > 0:
         ans += [theme] * min([num-1, num_repeat_themes])
         num_repeat_themes -= min([num-1, num_repeat_themes])
+
 
 print(*ans)
