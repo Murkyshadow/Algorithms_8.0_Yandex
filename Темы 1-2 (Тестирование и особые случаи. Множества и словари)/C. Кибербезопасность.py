@@ -1,5 +1,4 @@
-# 1:08 - 1:16
-
+# каждый из символов мы можем поменять с любым другим, но менять одинаковые символы бессмыслено
 count_syms = {}
 s = input()
 for sym in s:
@@ -12,3 +11,4 @@ for sym, num in count_syms.items():
     combinations += num * lost_syms # но мы можем их поменять с любым из тех, с которыми еще не меняли
 
 print(combinations)
+
