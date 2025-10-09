@@ -1,4 +1,6 @@
-# 16:43 - 17:10
+# насчитываем суммы если в каждой строке заменить вопросы на плюсы
+# насчитываем суммы если в каждом столбике заменить вопросы на минусы
+# далее просто перебираем все комбиницаа столбиков и строк, при этом если на их пересечении встречается знак вопроса, то отнимаем 2
 rows, cols = map(lambda x: int(x), input().split())
 get_col = lambda num_col, nums: [row[num_col] for row in nums]
 sum_row = []
@@ -18,5 +20,5 @@ for num_col in range(cols):
     for num_row in range(rows):
         max_dif = max([max_dif, sum_row[num_row] - sum_col[num_col] - (2 if matrix[num_row][num_col] == '?' else 0)])
 
-# print(sum_row, sum_col)
 print(max_dif)
+
