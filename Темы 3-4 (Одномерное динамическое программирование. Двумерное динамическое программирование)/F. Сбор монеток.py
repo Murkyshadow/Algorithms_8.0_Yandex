@@ -1,4 +1,3 @@
-# 1:42 - 1:51
 # идем сверху вниз выбирая для каждой ячейки наибольщее кол-во монет,
 # так же обрабатываем стены (можно их помечать -бесконечностью)
 import math
@@ -18,5 +17,6 @@ for num_row in range(1, n):
     dp[num_row][1] = max([dp[num_row - 1][0], dp[num_row - 1][1], dp[num_row-1][2]]) + dp[num_row][1] if dp[num_row][1] != -math.inf else -math.inf
     dp[num_row][2] = max([dp[num_row - 1][2], dp[num_row - 1][1]]) + dp[num_row][2] if dp[num_row][2] != -math.inf else -math.inf
     ans = max(dp[num_row]+[ans])
+
 
 print(ans)
