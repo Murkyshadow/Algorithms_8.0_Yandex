@@ -1,4 +1,3 @@
-# 5:15 - 5:35
 # Решать будем серез сортировку событий. Будет 2 события:
 # 1) конец рейса
 # 2) начало рейса
@@ -31,3 +30,4 @@ for time, type, where_bus in sorted(events):
         count_free_bus[where_bus] += 1
 
 print(count_free_bus['A'] + count_free_bus['B'])
+
