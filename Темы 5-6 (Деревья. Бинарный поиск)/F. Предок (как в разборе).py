@@ -1,4 +1,3 @@
-# 0:39 - 0:49
 import sys
 sys.setrecursionlimit(10**6)
 
@@ -27,5 +26,6 @@ TIME_IN, TIME_OUT = 0, 1
 for i in range(m):
     parent, child = map(int, input().split())
     ans[i] = int(times_node[parent][TIME_IN] < times_node[child][TIME_IN] < times_node[child][TIME_OUT] < times_node[parent][TIME_OUT])
+
 
 print(*ans, sep='\n')
